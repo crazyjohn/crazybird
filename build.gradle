@@ -1,0 +1,27 @@
+subprojects {
+	tasks.withType(JavaCompile) {
+    	options.encoding = "UTF-8"
+	}	
+	apply plugin: 'scala'
+	apply plugin: 'eclipse'
+	sourceSets {
+	    main {
+	        scala {
+	            srcDir 'src'
+	        }
+	    }
+	}
+	repositories {
+	    mavenCentral()
+	}
+
+	dependencies {
+		compile 'org.scala-lang:scala-library:2.10.1'
+	}
+
+
+	tasks.withType(JavaCompile) {
+		options.encoding = "UTF-8"
+	}	
+
+}

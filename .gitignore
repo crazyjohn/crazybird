@@ -1,0 +1,11 @@
+core/.cache-main
+core/.settings/
+core/bin/
+core/build/
+game/bin/
+game/build/
+test/bin/
+test/build/
+game/.cache-main
+game/.settings/
+test/.cache-main
